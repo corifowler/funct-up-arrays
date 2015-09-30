@@ -88,7 +88,10 @@ function findLongestWord(words) {
 var longWords = ['Amsterdam', 'Paleontologist', 'Mississippi', 'Tyrannosaurus'];
 
 function filterLongWords(words, i){
-    var longWords
+   var longerWords = words.filter(function(word){
+    return word.length > 10;
+   });
+  return longerWords;
 }
 
 // ---------------------
@@ -96,5 +99,5 @@ function filterLongWords(words, i){
 // ---------------------
 
 function charFreq(string){
-    //...
+    
 }
