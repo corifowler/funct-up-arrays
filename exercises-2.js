@@ -67,16 +67,28 @@ function reverse(stringPhrase){
 // Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
 // ---------------------
 
-function findLongestWord(words){
-    //...
-}
+var myWords = ['together', 'friends', 'boo', 'bicycle', 'fall'];
+
+function findLongestWord(words) {
+  var longest = words.reduce(function(longestWord, currentWord){
+    if (currentWord.length > longestWord.length) {
+      return currentWord;
+    } else {
+      return longestWord;
+    }
+  });
+  return longest.length;
+};
+
 
 // ---------------------
 // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
 // ---------------------
 
+var longWords = ['Amsterdam', 'Paleontologist', 'Mississippi', 'Tyrannosaurus'];
+
 function filterLongWords(words, i){
-    //...
+    var longWords
 }
 
 // ---------------------
