@@ -74,13 +74,13 @@ function oddNums(numbers) {
 // 5. Find words that contain `is`
 // ---------------------------
 
-// Still working on this one
 
-// function findIs(strings, subString){
-//   if (string.indexOf(subString) > -1) {
-//       return strings;
-//     };
-// };
+function findIs(strings){
+  var findString = strings.filter(function(string){
+    return string.indexOf('is') >= 0;
+  });
+  return findString;
+};
 
 
 // ---------------------------
