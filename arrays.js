@@ -87,7 +87,12 @@ function findIs(strings){
 // 5. Join Both Arrays Together
 // ---------------------------
 
+// Adds it all together, but not in the way it should 
 
+// function joinArrays(strings, numbers){
+//   var joined = strings.join(numbers);
+//   return joined;
+// };
 
 
 // ---------------------------
