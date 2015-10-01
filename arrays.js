@@ -36,24 +36,51 @@ function findLargestNumber(numbers) {
 // 2. Find longest string
 // ---------------------------
 
-
+function findLongestString(letters) {
+  var longest = letters.reduce(function(longestString, currentString){
+    if (currentString.length > longestString.length) {
+      return currentString;
+    } else {
+      return longestString;
+    }
+  });
+  return longest;
+};
 
 
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
 
-
+function evenNums(numbers) {
+  var evens = numbers.filter(function(number){
+    return number%2 === 0;
+  });
+  return evens;
+};
 
 // ---------------------------
 // 4. Find odd numbers
 // ---------------------------
 
+function oddNums(numbers) {
+  var odds = numbers.filter(function(number){
+    return number%2;
+  });
+  return odds;
+};
 
 // ---------------------------
 // 5. Find words that contain `is`
 // ---------------------------
 
+// Still working on this one
+
+// function findIs(strings, subString){
+//   if (string.indexOf(subString) > -1) {
+//       return strings;
+//     };
+// };
 
 
 // ---------------------------
