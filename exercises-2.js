@@ -35,6 +35,17 @@ function isVowel(char){
   };
 }
 
+// Different Method for creating function
+
+// function isVowel(char) {
+//   var vowels = 'aeiou';
+//   if (vowels.indexOf(char) !== -1) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
 // ---------------------
 // Write a function translate() that will translate a text into "rÃ¶varsprÃ¥ket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
@@ -51,6 +62,21 @@ var translate = function(phrase) {
   var finalPhrase = translatedArray.join('');
   return finalPhrase;
 };
+
+// Alternate way of solving
+
+// function translate(phrase) {
+//   var chars = phrase.split('');
+//   var finalPhrase = [];
+//   chars.forEach(function(char){
+//     if (!isVowel(char) && char !== '') {
+//       finalPhrase.push(char + 'o' + char);
+//     } else {
+//       finalPhrase.push(char);
+//     }
+//   });
+//   return finalPhrase.join('');
+// }
 
 // ---------------------
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
@@ -89,7 +115,7 @@ var longWords = ['Amsterdam', 'Paleontologist', 'Mississippi', 'Tyrannosaurus'];
 
 function filterLongWords(words, i){
    var longerWords = words.filter(function(word){
-    return word.length > 10;
+    return word.length > i;
    });
   return longerWords;
 }
